@@ -1,0 +1,220 @@
+/* Define custom variables */
+:root {
+    --primary-color: #ff4f5e;
+    --secondary-color: #6c4f7d;
+    --light-background: rgba(255, 255, 255, 0.9);
+    --dark-background: rgba(0, 0, 0, 0.7);
+    --font-family: 'Arial', sans-serif;
+    --font-size: 16px;
+    --spacing: 20px;
+}
+
+/* Global styles */
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff4f5e, #6c4f7d);
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    padding: 20px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Main container layout */
+.main-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Navigation styles */
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 220px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 40px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 20px 0;
+}
+
+nav a {
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Main content section */
+main {
+    margin-left: 240px;
+    padding: 40px 20px;
+    flex-grow: 1;
+    background: var(--light-background);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h2 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Product Section */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.product-card button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: #e34949;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Promos Section */
+#promos ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#promos ul li {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-background);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #e34949;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Navigation becomes a top bar on smaller screens */
+    nav {
+        width: 100%;
+        position: relative;
+        height: auto;
+        padding-top: 20px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}

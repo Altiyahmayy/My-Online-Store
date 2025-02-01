@@ -1,226 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY ONLINE STORE</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <style>
-        body {
-            background: linear-gradient(to right, rgb(124, 69, 78),pink), url('images.jfif') no-repeat center center fixed;
-            background-size: cover;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color: white;
-        }
-
-        header {
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px 0;
-        }
-
-        h1 {
-            color: palevioletred;
-        }
-
-        nav a {
-            color: burlywood;
-            margin-right: 20px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            color: white;
-            text-decoration: underline;
-        }
-
-        .justified {
-            text-align: center;
-            font-size: 18px;
-            line-height: 1.5;
-        }
-
-        main {
-            padding: 40px 10%;
-            background-color: rgba(0, 0, 0, 0.5);
-            margin: 20px 0;
-            border-radius: 10px;
-        }
-
-        section h2 {
-            color: burlywood;
-            font-size: 28px;
-        }
-
-
-        figure img {
-            width: 100%;
-            max-width: 400px;
-            margin: 0 auto;
-            display: block;
-        }
-
-        footer {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            color: white;
-        }
-
-        footer a {
-            color: burlywood;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-    </style>
-
     <header id="top">
-        <h1 style="text-align: center; color: rgb(238, 105, 127);">My Online Store</h1><br>
-        <nav>
-            <div style="text-align: center; font-size: 20px;">
-                <a href="index.html" style="color: burlywood; margin-right: 20px;">Home</a>
-                <a href="#about" style="color: burlywood; margin-right: 20px;">About Us</a>
-                <a href="#products" style="color: burlywood; margin-right: 20px;">Products</a>
-                <a href="#promos" style="color: burlywood; margin-right: 20px;">Promos</a>
-                <a href="#contact" style="color: burlywood; margin-right: 20px;">Contact Us</a>
-            </div>
-        </nav><br>
-         <p class="justified" style="text-align: center; font-size: 15px;">Discover the perfect blend of elegance and comfort at our online store. From chic accessories that elevate any outfit, to beautiful dresses that flatter every shape, and sandals that combine style with comfort—our collection is designed to make you feel confident and effortlessly stylish. Explore your new favorite pieces today and step into a wardrobe that celebrates you!</p>
+        <div class="container">
+            <h1>My Online Store</h1>
+        </div>
     </header>
 
-    <hr>
+    <div class="main-container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#promos">Promos</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
 
-    <main>
-        <article id="about">
-            <section id="our_store">
-                <h2 style="text-align: center;">Our Store</h2>
-                <p class="justified" style="text-align: center;">At Our Store, style meets your story – bags, watches, earrings, dresses, and sandals designed to inspire your every step.</p>
-
-                <figure>
-                    <img src="Accessories_Logo_021d050bb0.png" alt="Store Logo" height="200" width="200"><br>
-                    <figcaption style="font-weight: bold; text-align: center;"><br>
-                        Our Official Store Logo
-                    </figcaption>
-                    <p class="justified" style="text-align: center; font-size: 15px;">Step into a realm where accessories tell your story. From elegantly crafted earrings that glisten like drops of starlight to watches that mark time with a touch of grace, every piece whispers of sophistication. Our handbags are more than just carriers; they are companions, blending function with fashion, from urban-chic totes to evening clutches that dazzle.
-
-Our dresses are crafted for those who walk boldly, flowing with ethereal charm or structured to make a statement. Complete your look with sandals that carry you effortlessly, be it on golden sands or bustling city streets.
-
-Every item is curated to empower your individuality, making your style unforgettable. This is not just a store—it’s a destination for dreams and timeless elegance.</p>
-                </figure>
+        <main>
+            <section id="about">
+                <div class="container">
+                    <h2>About Our Store</h2>
+                    <p>Discover the perfect blend of elegance and comfort at our online store. Our collection includes chic accessories, stylish dresses, and comfortable sandals designed to elevate your style.</p>
+                </div>
             </section>
 
-            <section id="owner">
-                <h2 style="text-align: center;">The Owner</h2>
-                <figure>
-                    <img src="owner.jpg" alt="Store Owner" height="300" width="300" style="text-align: center;"><br>
-                    <figcaption style="font-weight: bold; text-align: center;">
-                        CEO of the Store
-                    </figcaption>
-                    <p class="justified" style="text-align: center; font-size: 15px;">
-                        At 20 years old, Althea Mae Custan is a visionary CEO who turned her passion for fashion into a thriving accessories store. Her creativity and determination shine through every bag, watch, earring, dress, and sandal she curates, making her store a reflection of her youthful energy and timeless style.
-                    </p>
-                </figure>
+            <section id="products">
+                <div class="container">
+                    <h2>Our Products</h2>
+                    <div class="product-container">
+                        <div class="product-card">
+                            <img src="satchel.jfif" alt="Satchel Bag">
+                            <h3>Satchel Bag</h3>
+                            <p>This stylish satchel is perfect for professionals.</p>
+                            <p>Price: ₱1,100</p>
+                            <button>Buy Now</button>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="watch.webp" alt="Classic Watch">
+                            <h3>Classic Watch</h3>
+                            <p>Timeless and elegant design, perfect for any occasion.</p>
+                            <p>Price: ₱1,999</p>
+                            <button>Buy Now</button>
+                        </div>
+
+                        <div class="product-card">
+                            <img src="jewww.jfif" alt="Jewelry Set">
+                            <h3>Silver Jewelry Set</h3>
+                            <p>Shimmer with sophistication in this elegant set.</p>
+                            <p>Price: ₱2,299</p>
+                            <button>Buy Now</button>
+                        </div>
+                    </div>
+                </div>
             </section>
-        </article>
 
-        <hr>
-
-        <article id="products">
-            <section>
-                <h2>Products</h2>
-
-                <figure>
-                    <h2 style="text-align: center;">Bags</h2>
-                <br>
-                
-                    <img src="satchel.jfif" alt="Product 1" height="200" width="200">
-                    <img src="leather.jfif" alt="Product 2" height="200" width="200"><br>
-                
-                    <figcaption style="font-weight: bold; text-align: center;">Satchel Bag</figcaption>
-                    <p class="justified" style="font-size: 15px;">This stylish and functional work satchel is designed for the modern professional who values both practicality and sophistication. Made with high-quality leather, it offers a spacious interior with organized compartments for your laptop, documents, and other essentials. Whether you're heading to the office or meeting clients, this bag is the perfect companion for every workday.</p>
+            <section id="promos">
+                <div class="container">
+                    <h2>Current Promos</h2>
                     <ul>
-                        <h3>Available Colors:</h3>
-                        <li>Classic-black:1,100</li>
-                        <li>Classic-red:1,100</li>
-                        <li>Classic-brown:1,100</li>
+                        <li>✨ New Year Exclusive – Get 15% OFF on all bags and watches. Valid until January 31, 2025.</li>
+                        <li>💎 Jewelry Bundle – Buy a silver necklace and earrings set for only ₱2,299 (Save ₱200!).</li>
+                        <li>👗 Dress + Sandals Combo – Buy any dress and get 20% OFF on sandals.</li>
                     </ul>
-
-                </figure>
+                </div>
             </section>
 
-            <section>
-                <h2 style="text-align: center;">Watch</h2>
-                <figure>
-                    <img src="watch.webp" alt="Product 1"><br>
-                    <figcaption style="font-weight: bold; text-align: center;">Classic Minimalist Watch
-                    </figcaption>
-                    <p class="justified" style="font-size: 15px;">Classic Minimalist Watch
-                        Timeless and versatile, this watch is designed for those who appreciate simplicity and elegance. Featuring a durable stainless-steel case, a sleek round dial, and a comfortable leather strap, it’s perfect for any occasion—whether at work or during casual outings. Its precise quartz movement ensures you’re always on time in style.</p>
-                        <ul>
-                            <h3>Available Colors:</h3>
-                            <li>Black Dial with Brown Leather Strap – ₱1,999 </li>
-                            <li>White Dial with Black Leather Strap – ₱1,999</li>
-                            <li>Rose Gold Dial with Beige Leather Strap – ₱1,999 </li>
-                        </ul>
-    
-                </figure>
-            </section> <br>
-
-            <section>
-                <h2 style="text-align: center;">Jewelry</h2>
-                <figure>
-                    <img src="jewww.jfif" alt="Product 1"><br>
-                    <figcaption style="font-weight: bold;text-align: center;">Elegant Silver Necklace and Earrings Set
-                    </figcaption>
-                    <p class="justified" style="font-size: 15pz;">Elegant Silver Necklace and Earrings Set
-                        Shimmer with sophistication with this timeless silver jewelry set. The necklace features a delicate chain with a brilliant cubic zirconia pendant, perfectly complemented by matching stud earrings. Whether for a formal event, a day at the office, or a casual outing, this set is versatile enough to suit any occasion.</p>
-                </figure>
+            <section id="contact">
+                <div class="container">
+                    <h2>Contact Us</h2>
+                    <p>For more info, feel free to reach out to us:</p>
+                    <ul>
+                        <li>Landline: 388-5654</li>
+                        <li>Phone: 09223468713</li>
+                        <li>Email: <a href="mailto:altheamae@gmail.com">altheamae@gmail.com</a></li>
+                    </ul>
+                </div>
             </section>
-        </article>
+        </main>
+    </div>
 
-        <hr>
-
-        <article id="promos">
-            <section>
-                <h2 style="text-align: center;">Promos</h2>
-                <figure>
-                   <ul>
-                <li> ✨ New Year Exclusive – Get 15% OFF on all bags and watches. Valid until January 31, 2025.</li>
-                <li>💎 Jewelry Bundle – Buy a silver necklace and earrings set for only ₱2,299 (Save ₱200!).</li>
-                <li>👗 Dress + Sandals Combo – Buy any dress and get 20% OFF on sandals.</li>
-                   </ul>
-                </figure>
-            </section>
-
-        </article>
-<hr>
-        <article id="contact">
-            <section>
-                <h2>Contact Us</h2>
-                <p>For more info...</p>
-                <ul>
-                    <li>
-                        Landline: 388-5654
-                    </li>
-                    <li>
-                        Phone Number: 09223468713
-                    </li>
-                    <li>
-                        Email: <a href="mailto:thosperlas20@gmail.com">altheamae@gmail.com</a>
-                    </li>
-                </ul>
-            </section>
-        </article>
-    </main>
-
-    <hr>
-
-    <footer style="text-align: center;"">
-        <p  style="font-weight: bold;">All Rights Reserved &copy; AM Custan 2025</p>
-        <a href="#top" style="text-align: center;">Back to Top</a>
+    <footer>
+        <p>All Rights Reserved &copy; AM Custan 2025</p>
+        <a href="#top">Back to Top</a>
     </footer>
 </body>
+
 </html>
